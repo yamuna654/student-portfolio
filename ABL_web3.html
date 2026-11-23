@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Route Kitchen</title>
+  <style>
+    * { 
+box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ body {
+ font-family: Arial, sans-serif;
+ background: #fff8f0;
+ color: #2a1d15; 
+}
+ header {
+ background: #fff;
+ padding: 14px 24px;
+ display: flex;
+justify-content: space-between; 
+align-items: center;
+border-bottom: 1px solid #eee;
+ }
+    header h1 { font-size: 20px; color: #e4572e; }
+    header a { margin-left: 14px; color: #2a1d15; text-decoration: none; }
+    .after-nav{
+ background: linear-gradient(135deg, #e4572e, #f39c3d);
+ color: #fff; text-align: center; padding: 50px 20px; }
+    .after-nav h2 { font-size: 30px; margin-bottom: 8px; }
+    .info { background: #fff; padding: 14px; text-align: center;
+            font-size: 14px; border-bottom: 1px solid #eee; }
+
+    .offers { display: flex; gap: 16px; padding: 0 24px 10px;
+              overflow-x: auto; }
+    .offer { flex: 0 0 240px; background: #ffe9df; color: #c2410c;
+             border-radius: 10px; padding: 16px; text-align: center; }
+    .offer b { display: block; font-size: 18px; margin-bottom: 4px; }
+    .offer span { font-size: 13px; }
+    .offer em { display: inline-block; margin-top: 8px; padding: 2px 10px;
+                border: 1px dashed #c2410c; border-radius: 6px;
+                font-style: normal; font-size: 12px; }
+
+    h3.title { padding: 20px 24px 10px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 16px; padding: 0 24px 30px; }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 14px; }
+    .pic { height: 110px; background: #ffe9df; border-radius: 8px; font-size: 50px;
+           display: flex; align-items: center; justify-content: center; }
+    .card h4 { margin: 10px 0 4px; }
+    .card p { font-size: 14px; color: #666; margin-bottom: 6px; }
+    .rating { color: #e09b00; font-size: 13px; }
+    .price { font-weight: bold; font-size: 18px; margin: 6px 0; }
+    button { width: 100%; padding: 10px; background: #e4572e; color: #fff;
+             border: none; border-radius: 8px; cursor: pointer; }
+    .review { background: #fff; margin: 0 24px 30px; padding: 16px;
+              border-radius: 10px; border: 1px solid #eee; font-style: italic; }
+
+    footer { text-align: center; padding: 18px; font-size: 13px; color: #777; }
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+    /* Mobile */
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Spice Route Kitchen</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+  </header>
+
+  <div class="after-nav">
+    <h2>Fresh Indian food, delivered hot</h2>
+    <p>Ready in 30 minutes</p>
+  </div>
+
+  <div class="info">★ 4.6 rating · 30 min delivery · North Indian · Open 10am to 11pm</div>
+
+  <h3 class="title">Special offers</h3>
+  <div class="offers">
+    <div class="offer"><b>40% off</b><span>On your first order</span><br><em>Code: WELCOME40</em></div>
+    <div class="offer"><b>Free delivery</b><span>On orders above ₹499</span><br><em>Code: FREEDEL</em></div>
+    <div class="offer"><b>Combo for ₹349</b><span>Biryani + Raita + Dessert</span><br><em>Code: COMBO349</em></div>
+  </div>
+
+  <h3 class="title" id="menu">Menu</h3>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nFJbLCGN85eYTrBbwCm2ii2FQ0rLk3kmmBUnkPxOJQ&s=10.jpg"  width="100" height="100"></div>
+      <h4>Hyderabadi biryani</h4>
+      <p>Basmati rice with tender chicken and saffron.</p>
+      <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+      <div class="price">₹279</div>
+      <button>Order now</button>
+    </div>
+
+    <div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjJCHEPsHOl9AbMoWipSmb5dWpDF9NH8ZbAr3GIothg&s=10.jpg" width="100" height="100"> </div>
+      <h4>Tandoori chicken</h4>
+      <p>Chargrilled chicken in yoghurt and spices.</p>
+      <div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+      <div class="price">₹299</div>
+      <button>Order now</button>
+    </div>
+<div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC7jn-WhkC61ouZLKHHyWM9DygTN6wUmTjShXQes7cBw&s=10.jpg" width="100" height="100"> </div>
+      <h4>Paneer butter masala</h4>
+      <p>Soft paneer in a creamy tomato gravy.</p>
+      <div class="rating">⭐⭐⭐⭐⭐4.6</div>
+      <div class="price">₹249</div>
+      <button>Order now</button>
+    </div>
+<div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiRnDANOVdlcFSfWjKjt9-DR9-7IpVkET3CdUnYBCGMw&s.jpg" width="100" height="100"> </div>
+      <h4>panner buger</h4>
+      <p>Soft paneer , buger.</p>
+      <div class="rating">⭐⭐⭐⭐⭐4.5</div>
+      <div class="price">₹259</div>
+      <button>Order now</button>
+    </div>
+<div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlz17NKtA-OS7x74uX5IAjRwguzFqwHmXd48IpHZRcg&s=10.jpg" width="100" height="100"> </div>
+      <h4>samber idely</h4>
+      <p>samber with soft idely.</p>
+      <div class="rating">⭐⭐⭐⭐⭐4.4</div>
+      <div class="price">₹99</div>
+      <button>Order now</button>
+    </div>
+<div class="card">
+      <div class="pic">
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQenU8_YCg8gVY0gjNanC2pDLI_18sMFv2ZgDJFPGpITQ&s=10.jpg" width="100" height="100"> </div>
+      <h4>waffle</h4>
+      <p>chocolet waffle.</p>
+      <div class="rating">⭐⭐⭐⭐⭐4.9</div>
+      <div class="price">₹180</div>
+      <button>Order now</button>
+    </div>
+
+
+
+
+
+  </div>
+
+  <h3 class="title" id="reviews">Customer reviews</h3>
+  <div class="review">“The best biryani in the city. It arrived hot and on time.” – Ananya R.</div>
+
+  <footer>© 2026 Spice Route Kitchen</footer>
+
+</body>
+</html>
